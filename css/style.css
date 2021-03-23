@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&display=swap');
+
+/* 0 Generals classes */
+    /* 1 Nabvar Section */
+
+
+
+/* 0 Generals classes */
+:root{
+    --pink-color: #F62F5E;
+    --dark-gray: #2E2E2E;
+    --white: #fff;
+}
+body{
+    margin: 0;
+    font-family: Montserrat;
+}
+.wrapper{
+    padding: 0 5%;
+}
+/* 1 Nabvar Section */
+.wrapper-navbar{
+    background-color: var(--pink-color);
+    height: 72px;
+    padding: 0 5%;
+}
+.navbar{
+    background-color: var(--pink-color);
+    height: 72px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.navbar-title{
+    line-height: 70px;
+    font-size: 1.5em;
+}
+.navbar-menu{
+    display: none;
+    list-style: none;
+}
+.navbar-menu > li{
+    padding: .5em;
+}
+.navbar-icons{
+    line-height: 70px;
+}
+  
+  /* Icon*/
+  .icon-menu:hover{
+    cursor: pointer;
+  }
+  .icon-menu{
+  width: 35px;
+  height:5px;
+  position: relative;
+  margin: 20px auto;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.icon-menu span {
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: var(--dark-gray);
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+  
+  .icon-menu span:nth-child(1) {
+    top: 0px;
+  }
+  
+  .icon-menu span:nth-child(2),.icon-menu span:nth-child(3) {
+    top: 10px;
+  }
+  
+  .icon-menu span:nth-child(4) {
+    top: 20px;
+  }
+  
+  .icon-menu.open span:nth-child(1) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
+  }
+  
+  .icon-menu.open span:nth-child(2) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  
+  .icon-menu.open span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+  
+  .icon-menu.open span:nth-child(4) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
+  }
+  
+  
